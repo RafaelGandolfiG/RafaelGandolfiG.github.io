@@ -1,0 +1,274 @@
+body{
+  background-image: url('logo.jpeg');
+  font-family: 'Orbitron', sans-serif;
+  font-size: 14px;
+}
+
+
+
+.logo{
+    width: 600px;
+    height: 200px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.parte2{
+    display: flex;
+    margin-left: 50px;
+    flex-direction: column;
+    width: 500px;
+    font-size: 17px;
+}
+
+.dourado{
+    color: #d4af37;
+}
+
+.parte3{
+    display: flex;
+    margin-left: 50px;
+}
+
+.parte5{
+    background-color: black;
+    display: flex;
+    height: 600px;
+    width: 480px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-left: 50px;
+    transition: transform 0.3s ease;
+    flex-direction: column;
+    box-shadow: 0 8px 16px 0 gray;
+}
+.parte5:hover{
+    transform: scale(1.05);
+}
+.pilotos{
+    width: 260px;
+    height: 360px;
+    margin-top: px;
+}
+
+#sonny{
+    display: flex;
+    margin-top: 20px;
+    width: 400px;
+    text-align: center;
+}
+
+.parte6{
+    background-color: black;
+    display: flex;
+    height: 600px;
+    width: 480px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-left: 50px;
+    transition: transform 0.3s ease;
+    flex-direction: column;
+    box-shadow: 0 8px 16px 0 gray;
+}
+.parte6:hover{
+    transform: scale(1.05);
+}
+
+.parte4{
+    display: flex;
+    flex-direction: row;
+}
+
+.parte7{
+    display: flex;
+    margin-left: 50px;
+}
+
+.parte8{
+    display: flex;
+    flex-direction: row;
+}
+
+.parte9{
+    background-color: black;
+    border-radius: 20px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 8px 16px 0 gray;
+    transition: transform 0.3s ease;
+    margin-left: 50px;
+}
+.parte9 div{
+    margin-left: 30px;
+}
+.parte9:hover{
+    transform: scale(1.05);
+}
+
+
+.produtos{
+    width: 200px;
+    height: 200px;
+}
+
+.button {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 24px;
+  font-size: 18px;
+  color: rgb(193, 163, 98);
+  border: 2px solid rgb(193, 163, 98);
+  border-radius: 34px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: rgb(193, 163, 98);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button:hover::before {
+  scale: 3;
+}
+
+.button:hover {
+  color: #212121;
+  scale: 1.1;
+  box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+}
+
+.button:active {
+  scale: 1;
+}
+
+.parte10{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+  body {
+    background-color: #2f2f2f;
+  }
+
+  .logo {
+    width: 90%;
+    height: auto;
+  }
+
+  .container {
+    justify-content: center;
+  }
+
+  .parte2, .parte3, .parte7 {
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+  }
+
+  .parte4 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .parte5, .parte6 {
+    width: 85%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  #sonny {
+    width: 90%;
+  }
+
+  .pilotos {
+    width: 80%;
+    height: auto;
+  }
+
+  .parte8 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .parte9 {
+    width: 80%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .produtos {
+    width: 70%;
+    height: auto;
+  }
+
+  .button {
+    font-size: 20px;
+    padding: 14px 30px;
+  }
+
+  h1, h2 {
+    text-align: center;
+  }
+
+  p {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+.cinza{
+  color: gray;
+  font-size: 15px;
+}
+
+.parte11{
+  width: 500px;
+  font-size: 17px;
+  display: flex;
+  margin-left: 50px;
+  flex-direction: column;
+}
+
+.carro{
+  width: 500px;
+  height: 300px;
+}
+
+.parte12{
+  display: flex;
+  margin-left: 50px;
+  background-color: black;
+  border-radius: 20px;
+  width: 550px;
+  height: 350px;
+  box-shadow: 0 8px 16px 0 gray;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.parte12:hover{
+    transform: scale(1.05);
+}
