@@ -1,0 +1,411 @@
+
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+.topo {
+    position: fixed;
+    top: 0;                
+    left: 0;
+    width: 100%;
+    height: 90px;           
+    background-color:#0D2C54;
+    color: white;
+    padding: 15px;
+    text-align: center;   
+    z-index: 1000;   
+}
+body{
+    background-color: #1E2233;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 14px;
+    color: white;
+}
+
+.logo{
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.parte1{
+    display: flex;
+}
+.icones{
+    display: flex;
+    width: 100px;
+    height: 30px;
+    margin-left: 30px;
+}
+.icones:hover{
+    border-bottom: 2px solid red;
+    cursor: pointer;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    margin-left: 190px;
+    align-items: center;
+}
+
+button {
+  position: relative;
+  font-size: 1.2em;
+  padding: 0.7em 1.4em;
+  background-color: #BF0426;
+  text-decoration: none;
+  border: none;
+  border-radius: 0.5em;
+  color: #DEDEDE;
+  box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+button::before {
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, rgba(33,33,33,1) 0%, rgba(33,33,33,1) 50%, rgba(150,4,31,1) 50%, rgba(191,4,38,1) 60%);
+  border-radius: 0 0 0.5em 0;
+  box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+button:hover::before {
+  width: 1.6em;
+  height: 1.6em;
+}
+
+button:active {
+  box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);
+  transform: translate(0.1em, 0.1em);
+}
+
+.botao{
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vermelho{
+    color: red;
+}
+
+#vermelho{
+    color: red;
+}
+
+.pilotos{
+    width: 380px;
+    height: 300px;
+}
+.parte2{
+    color: white;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-left:150px;
+}
+
+.parte3{
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+    justify-content: space-between;
+    width: 830px;
+}
+.parte4, .parte5{
+    background-color: #2c3e50;
+    height: 600px;
+    width: 450px;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    flex-direction: column;
+    text-align: center;
+}
+.parte4:hover, .parte5:hover{
+    transform: scale(1.05);
+}
+.parte5{
+    margin-left: 30px;
+}
+
+.carro{
+    width: 500px;
+    height: 300px;
+}
+.parte6{
+    margin-left: 150px;
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+}
+
+.parte7{
+    display: flex;
+    width: 550px;
+    height: 350px;
+    border-radius: 20px;
+    background-color: #2c3e50;
+    transition: transform 0.3s ease;
+    justify-content: center;
+    align-items: center;
+}
+.parte7:hover{
+    transform: scale(1.05);
+}
+
+.parte8{
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+    width: 1000px;
+    justify-content: space-between;
+}
+
+.parte9{
+    display: flex;
+    flex-direction: column;
+    background-color: #2c3e50;
+    width: 230px;
+    height: 350px;
+    border-radius: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+.parte9:hover{
+    transform: scale(1.05);
+}
+
+.produtos{
+    width: 200px;
+    height: 200px;
+}
+
+
+@media (max-width: 900px) {
+
+  body {
+    background-color: #1E2233;
+    font-size: 15px;
+  }
+
+  .topo {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .icones {
+    margin: 5px;
+    width: auto;
+  }
+
+  .logo {
+    width: 120px;
+    height: auto;
+    margin: auto;
+  }
+
+  .parte2, .parte6 {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .parte3 {
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+  }
+
+  .parte4, .parte5 {
+    width: 85%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .pilotos {
+    width: 80%;
+    height: auto;
+  }
+
+  .parte7 {
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+
+  .parte8 {
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+
+  .parte9 {
+    width: 80%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .produtos {
+    width: 70%;
+    height: auto;
+  }
+
+  h1, h2, p {
+    text-align: center;
+  }
+
+  button {
+    width: 60%;
+    margin: 10px auto;
+    display: block;
+  }
+}
+#z{
+    margin-left: 150px;
+}
+
+@media (max-width: 1000px) {
+
+  .menu {
+    margin-left: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .parte2,
+  .parte6 {
+    width: 90%;
+    margin: 120px auto 0;
+  }
+
+  .parte3 {
+    width: 90%;
+    margin: auto;
+    gap: 20px;
+  }
+
+  .parte4,
+  .parte5 {
+    width: 45%;
+    height: auto;
+  }
+
+  .parte8 {
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .parte9 {
+    width: 45%;
+  }
+
+  #z {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .topo {
+    position: relative;
+    height: auto;
+  }
+
+  .parte1 {
+    flex-direction: column;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .parte3 {
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+  }
+
+  .parte4,
+  .parte5 {
+    width: 90%;
+  }
+
+  .parte7,
+  .carro {
+    width: 100%;
+    height: auto;
+  }
+
+  .parte8 {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .parte9 {
+    width: 90%;
+  }
+
+  button {
+    width: 70%;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 400px) {
+
+  body {
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+
+  .pilotos,
+  .produtos {
+    width: 100%;
+    height: auto;
+  }
+
+  button {
+    width: 90%;
+  }
+}
