@@ -1,0 +1,173 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #f7f7f7;
+  display: grid;
+  gap: 60px;
+  justify-items: center;
+}
+
+/* TEXTOS */
+p {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 15px 30px;
+  border-radius: 4px;
+  border: 2px solid transparent;
+}
+
+nav a:hover{
+  border: 2px solid #e21;
+}
+
+/* TOPO */
+.topo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 1000px;
+  background-color: white;
+  position: relative;
+}
+
+.conteudo {
+  display: grid;
+  gap: 0px;
+  padding: 40px;
+  text-align: right;
+  justify-items: end;
+  align-content: center;
+}
+
+.botao {
+  background-color: #ee2211;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.botao:hover{
+  background-color: #900;
+}
+
+.bicicleta {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* ARTICLE */
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+  padding: 40px;
+  gap: 40px;
+  align-items: center;
+}
+
+
+
+.vantagens {
+  font-size: 4rem;
+  color: #c6c6c6;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+/* LISTA DE VANTAGENS */
+.baixo {
+  display: grid;
+  gap: px;
+}
+
+.baixo1 {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.baixo1 p {
+  grid-column: 2;
+  margin-top: -20px;
+}
+
+.borda{
+  border-left: 4px solid transparent;
+}
+.borda:hover{
+  border-left: 4px solid #e21;
+}
+#cinza{
+  background-color:lightgray;
+  border-radius: 4px;
+}
+
+.imagem img{
+  object-fit: cover;
+  height: 100%;
+}
+
+@media(max-width:1000px){
+  .topo{
+    grid-template-columns: 1fr;
+  }
+  article{
+    grid-template-columns: 1fr;
+  }
+  article h1{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center
+  }
+  .conteudo{
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+  }
+  .vantagens{
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
+@media(max-width:600px){
+  body{
+    gap: 30px;
+  }
+}
+
+@media(max-width:400px){
+  article h1{
+    font-size: 1rem;
+  }
+}
