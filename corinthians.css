@@ -1,0 +1,323 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-size: 14px;
+  overflow-x: hidden;
+  display: grid;
+  gap: 50px;
+  background-color: rgb(32, 32, 32);
+  font-family: 'Oswald', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: black;
+    display: grid;
+    justify-content: center;
+    z-index: 1000;
+    width: 100%;
+}
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+.botoes a{
+    color: goldenrod;
+    text-decoration: none;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+.escudo{
+    width: 300px;
+    height: 200px;
+    justify-self: center;
+}
+
+.secoes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    gap: 20px;
+}
+
+.secoes a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: goldenrod;
+}
+
+.topo{
+    display: grid;
+    margin-top: 30px;
+    justify-items: center;
+    text-align: center;
+    max-width: 900px;
+    justify-content: center;
+    justify-self: center;
+    gap: 30px;
+}
+
+
+.topo p{
+    color: whitesmoke;
+}
+
+.topo h2,h1{
+    color: goldenrod;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 1rem;
+    color: white;
+}
+
+.card{
+    width: 300px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.267);
+    border: hidden;
+    border-radius: 6px;
+    align-content: center;
+    margin-top: 30px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.fotos{
+    justify-self: center;
+    border-radius: 4px;
+}
+
+.atletas{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    color: goldenrod;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+article{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.produtos{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    color: goldenrod;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.produtos img{
+    width: 200px;
+    height: 300px;
+}
+
+.arena{
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    margin-top: 30px;
+    max-width: 900px;
+    justify-self: center;
+}
+
+.arena .card{
+    width: 700px;
+}
+
+.arena img{
+    width: 100%;
+    height: 400px;
+}
+
+.arena iframe{
+    width: 400px;
+    height: 280px;
+    border-radius: 6px;
+}
+
+.estadio{
+    display: grid;
+}
+
+
+footer{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.button{
+  cursor: pointer;
+  position: relative;
+  padding: 10px 24px;
+  font-size: 18px;
+  color: rgb(193, 163, 98);
+  border: 2px solid rgb(193, 163, 98);
+  border-radius: 34px;
+  background-color: transparent;
+  font-weight: 600;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.button::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  background-color: rgb(193, 163, 98);
+  z-index: -1;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button:hover::before{
+  scale: 3;
+}
+
+.button:hover{
+  color: #212121;
+  scale: 1.1;
+  box-shadow: 0 0px 20px rgba(193, 163, 98, 0.4);
+}
+
+.button:active{
+  scale: 1;
+}
+
+footer nav{
+    display: grid;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+@media(max-width:1000px){
+    .arena article{
+        display: grid;
+    }
+    .arena img{
+        width: 100%px;
+    }
+    .arena .card{
+        width: 600px;
+    }
+    main{
+        justify-self: center;
+        align-items: center;
+        align-content: center;
+        max-width: 700px;
+    }
+}
+
+@media(max-width:700px){
+    main{
+        justify-self: center;
+        align-items: center;
+        align-content: center;
+        max-width: 500px;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    .arena img{
+        width: 500px;
+    }
+    .arena .card{
+        width: 500px;
+    }
+    .arena iframe{
+        width: 300px;
+    }
+    header{
+        position: absolute;
+    }
+}
+
+
+@media(max-width:500px){
+    .arena img{
+        width: 400px;
+    }
+    .arena .card{
+        width: 400px;
+        justify-self: center;
+    }
+    .arena iframe{
+        width: 300px;
+        height: 220px;
+    }
+      main{
+        justify-self: center;
+        align-items: center;
+        align-content: center;
+        max-width: 400px;
+    }
+    nav{
+        gap: 30px;
+    }
+}
+
+@media(max-width:400px){
+    main{
+        justify-self: center;
+        align-items: center;
+        align-content: center;
+        max-width: 300px;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    .arena img{
+        width: 250px;
+        width: 100%;
+    }
+    .arena .card{
+        width: 300px;
+        justify-self: center;
+    }
+      .arena iframe{
+        width: 250px;
+        height: 200px;
+    }
+    .titulos .card{
+        width: 250px;
+    }
+    .titulos img{
+        width: 250px;
+        height: 90%;
+    }
+}
