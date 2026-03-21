@@ -93,3 +93,10 @@ function bk(){
 
 const btnpbk=document.getElementById('pbk')
 if (btnpbk) btnpbk.onclick=bk;
+
+function calculadora(){
+    window.location.href='calculadora.html';
+}
+
+const btncalc=document.getElementById('calc')
+if (btncalc) btncalc.onclick=calculadora;
