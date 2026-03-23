@@ -1,6 +1,9 @@
 const display=document.querySelector('.display');
 function add(elemento){
     display.innerText+=elemento;
+    if (display.innerText.length == 32){
+        return apagar();
+    }
 }
 function apagar(){
     display.innerText='';
